@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CareerOps Candidate Policy",
+  "type": "object",
+  "properties": {
+    "target_roles": {"type": "array", "items": {"type": "string"}},
+    "preferred_technologies": {"type": "array", "items": {"type": "string"}},
+    "minimum_base_compensation": {"type": ["number", "null"]},
+    "remote_us": {"type": "boolean"},
+    "accepted_hybrid_markets": {"type": "array", "items": {"type": "string"}},
+    "blacklisted_companies": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

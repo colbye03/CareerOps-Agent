@@ -1,5 +1,7 @@
 # CareerOps Agent
 
+[![tests](https://github.com/colbye03/CareerOps-Agent/actions/workflows/test.yml/badge.svg)](https://github.com/colbye03/CareerOps-Agent/actions/workflows/test.yml)
+
 CareerOps Agent is an AI-assisted career intelligence workflow for discovering, deduplicating, scoring, tracking, and preparing applications for high-fit technical roles.
 
 Rather than treating job search as a one-shot prompt, the project models it as a repeatable operating system:
@@ -116,8 +118,11 @@ CareerOps-Agent/
 │       ├── ledger.py
 │       ├── scoring.py
 │       └── workflow.py
+├── .github/workflows/
+│   └── test.yml
 └── tests/
     ├── test_dedupe.py
+    ├── test_ledger.py
     └── test_scoring.py
 ```
 

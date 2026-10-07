@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CareerOps Job",
+  "type": "object",
+  "required": ["company", "title", "source", "source_url"],
+  "properties": {
+    "company": {"type": "string"},
+    "title": {"type": "string"},
+    "requisition_id": {"type": ["string", "null"]},
+    "source": {"type": "string"},
+    "source_url": {"type": "string", "format": "uri"},
+    "apply_url": {"type": ["string", "null"], "format": "uri"},
+    "location": {"type": ["string", "null"]},
+    "work_arrangement": {"enum": ["remote", "hybrid", "onsite", "unknown"]},
+    "compensation_min": {"type": ["number", "null"]},
+    "compensation_max": {"type": ["number", "null"]},
+    "currency": {"type": ["string", "null"]},
+    "requirements": {"type": "array", "items": {"type": "string"}},
+    "preferred_qualifications": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}
