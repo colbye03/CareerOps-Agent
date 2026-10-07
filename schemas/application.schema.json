@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CareerOps Application",
+  "type": "object",
+  "required": ["company", "title", "status"],
+  "properties": {
+    "company": {"type": "string"},
+    "title": {"type": "string"},
+    "requisition_id": {"type": ["string", "null"]},
+    "application_date": {"type": ["string", "null"], "format": "date"},
+    "latest_communication_date": {"type": ["string", "null"], "format": "date-time"},
+    "status": {"type": "string"},
+    "status_source": {"type": ["string", "null"]},
+    "source_authority": {"type": ["integer", "null"], "minimum": 0, "maximum": 5},
+    "next_action": {"type": ["string", "null"]},
+    "deadline": {"type": ["string", "null"], "format": "date-time"}
+  },
+  "additionalProperties": true
+}
