@@ -1,0 +1,324 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title description">
+<title id="title">CareerOps — Job Search Workflow and Tracking Process</title>
+<desc id="description">Five stages: Search and Collect, Filter and Evaluate, Prepare and Apply, Track and Monitor, Recommend and Iterate. Includes a synthetic search funnel, illustrative role weights and synthetic application statuses. A conceptual reference workflow, not a live dashboard.</desc>
+<defs>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#239df1"/><stop offset="1" stop-color="#0865c9"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#229958"/><stop offset="1" stop-color="#087536"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffda53"/><stop offset="1" stop-color="#ffb91c"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8d60cd"/><stop offset="1" stop-color="#6035ab"/></linearGradient>
+<linearGradient id="bright" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4798ff"/><stop offset="1" stop-color="#1465e8"/></linearGradient>
+<linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d559a"/><stop offset="1" stop-color="#083c7b"/></linearGradient>
+<linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6cddff"/><stop offset="1" stop-color="#2bb6ed"/></linearGradient>
+<linearGradient id="lime" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#64c879"/><stop offset="1" stop-color="#2d9849"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9b38"/><stop offset="1" stop-color="#ff651f"/></linearGradient>
+</defs><g font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1600" height="1100" rx="0" fill="#fbfdff" stroke="#fbfdff"/>
+<text x="24" y="45" font-size="40" fill="#081f48" font-weight="700">Job Search Workflow &amp; Tracking Process</text>
+<text x="24" y="78" font-size="25" fill="#133a70" font-weight="600">From Search to Offer — End-to-End Workflow</text>
+<rect x="1170" y="15" width="405" height="67" rx="10" fill="#f0f6fd" stroke="#c6d9ef"/>
+<text x="1190" y="40" font-size="16" fill="#0b2858" font-weight="700">REFERENCE WORKFLOW</text>
+<text x="1190" y="64" font-size="14" fill="#0a2149" font-weight="400">Synthetic illustration · No live application data</text>
+<rect x="12" y="98" width="302" height="356" rx="9" fill="#ffffff" stroke="#086bcc44"/>
+<rect x="12" y="98" width="302" height="65" rx="9" fill="url(#blue)" stroke="#086bcc"/>
+<circle cx="49" cy="130" r="23" fill="#ffffff" stroke="#e1ebf7"/>
+<text x="42" y="139" font-size="26" fill="#086bcc" font-weight="700">1</text>
+<text x="90" y="128" font-size="20" fill="#ffffff" font-weight="700">Search &amp; Collect</text>
+<text x="90" y="150" font-size="12.5" fill="#ffffff" font-weight="400">Find relevant, current opportunities</text>
+<g transform="translate(36 178) scale(1)" fill="none" stroke="#086bcc" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 32V5h20v27M23 16h9v16M0 32h35M8 11h3m5 0h3M8 18h3m5 0h3M8 25h3m5 0h3"/>
+</g>
+<text x="94" y="190" font-size="14.5" fill="#0a204a" font-weight="700">LinkedIn Jobs</text>
+<text x="94" y="210" font-size="13.3" fill="#283c59" font-weight="400">Search configured roles and locations</text>
+<path d="M89 233H296" stroke="#e4edf5"/>
+<g transform="translate(36 243) scale(1)" fill="none" stroke="#086bcc" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="14" cy="14" r="11"/><path d="M22 22l10 10"/>
+</g>
+<text x="94" y="255" font-size="14.5" fill="#0a204a" font-weight="700">Indeed</text>
+<text x="94" y="275" font-size="13.3" fill="#283c59" font-weight="400">Cross-check relevant</text>
+<text x="94" y="292" font-size="13.3" fill="#283c59" font-weight="400">current openings</text>
+<path d="M89 298H296" stroke="#e4edf5"/>
+<g transform="translate(36 308) scale(1)" fill="none" stroke="#086bcc" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 32V5h20v27M23 16h9v16M0 32h35M8 11h3m5 0h3M8 18h3m5 0h3M8 25h3m5 0h3"/>
+</g>
+<text x="94" y="320" font-size="14.5" fill="#0a204a" font-weight="700">Company Career Sites</text>
+<text x="94" y="340" font-size="13.3" fill="#283c59" font-weight="400">Prefer direct employer listings</text>
+<path d="M89 363H296" stroke="#e4edf5"/>
+<g transform="translate(36 373) scale(1)" fill="none" stroke="#086bcc" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 2h17l8 8v25H6zM23 2v9h8M12 17h13M12 23h13M12 29h8"/>
+</g>
+<text x="94" y="385" font-size="14.5" fill="#0a204a" font-weight="700">Other Sources</text>
+<text x="94" y="405" font-size="13.3" fill="#283c59" font-weight="400">Trusted job boards and industry sites</text>
+<path d="M308 274h11v-9l12 15-12 15v-9h-11z" fill="#29a4ff"/>
+<rect x="331" y="98" width="302" height="356" rx="9" fill="#ffffff" stroke="#117e4244"/>
+<rect x="331" y="98" width="302" height="65" rx="9" fill="url(#green)" stroke="#117e42"/>
+<circle cx="368" cy="130" r="23" fill="#ffffff" stroke="#e1ebf7"/>
+<text x="361" y="139" font-size="26" fill="#117e42" font-weight="700">2</text>
+<text x="409" y="128" font-size="20" fill="#ffffff" font-weight="700">Filter &amp; Evaluate</text>
+<text x="409" y="150" font-size="12.5" fill="#ffffff" font-weight="400">Identify strong-fit, real opportunities</text>
+<g transform="translate(355 178) scale(1)" fill="none" stroke="#117e42" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M2 4h32L21 19v13l-8-5v-8z"/>
+</g>
+<text x="413" y="190" font-size="14.5" fill="#0a204a" font-weight="700">Deduplicate</text>
+<text x="413" y="210" font-size="13.3" fill="#283c59" font-weight="400">Remove duplicate postings and</text>
+<text x="413" y="227" font-size="13.3" fill="#283c59" font-weight="400">previously surfaced roles</text>
+<path d="M408 233H615" stroke="#e4edf5"/>
+<g transform="translate(355 243) scale(1)" fill="none" stroke="#117e42" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<rect x="5" y="7" width="25" height="28" rx="3"/><rect x="12" y="2" width="12" height="8" rx="3"/><path d="M11 18h13M11 24h13M11 30h9"/>
+</g>
+<text x="413" y="255" font-size="14.5" fill="#0a204a" font-weight="700">Apply Fit Criteria</text>
+<text x="413" y="275" font-size="13.3" fill="#283c59" font-weight="400">Role, skills, location, compensation,</text>
+<text x="413" y="292" font-size="13.3" fill="#283c59" font-weight="400">seniority and candidate direction</text>
+<path d="M408 298H615" stroke="#e4edf5"/>
+<g transform="translate(355 308) scale(1)" fill="none" stroke="#117e42" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 1l5 11 12 2-9 9 2 12-10-6-11 6 2-12-9-9 13-2z"/>
+</g>
+<text x="413" y="320" font-size="14.5" fill="#0a204a" font-weight="700">Score Each Role</text>
+<text x="413" y="340" font-size="13.3" fill="#283c59" font-weight="400">Fit score (0–100) based on evidence</text>
+<text x="413" y="357" font-size="13.3" fill="#283c59" font-weight="400">and configured preferences</text>
+<path d="M408 363H615" stroke="#e4edf5"/>
+<g transform="translate(355 373) scale(1)" fill="none" stroke="#117e42" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="14" cy="14" r="11"/><path d="M22 22l10 10"/>
+</g>
+<text x="413" y="385" font-size="14.5" fill="#0a204a" font-weight="700">Assess Gaps &amp; Risks</text>
+<text x="413" y="405" font-size="13.3" fill="#283c59" font-weight="400">Be explicit about requirements,</text>
+<text x="413" y="422" font-size="13.3" fill="#283c59" font-weight="400">experience and market fit</text>
+<path d="M627 274h11v-9l12 15-12 15v-9h-11z" fill="#29a4ff"/>
+<rect x="650" y="98" width="302" height="356" rx="9" fill="#ffffff" stroke="#e69a0044"/>
+<rect x="650" y="98" width="302" height="65" rx="9" fill="url(#gold)" stroke="#e69a00"/>
+<circle cx="687" cy="130" r="23" fill="#ffffff" stroke="#e1ebf7"/>
+<text x="680" y="139" font-size="26" fill="#e69a00" font-weight="700">3</text>
+<text x="728" y="128" font-size="20" fill="#142747" font-weight="700">Prepare &amp; Apply</text>
+<text x="728" y="150" font-size="12.5" fill="#142747" font-weight="400">Create tailored materials and submit</text>
+<g transform="translate(674 178) scale(1)" fill="none" stroke="#e69a00" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 2h17l8 8v25H6zM23 2v9h8M12 17h13M12 23h13M12 29h8"/>
+</g>
+<text x="732" y="190" font-size="14.5" fill="#0a204a" font-weight="700">Tailor Resume</text>
+<text x="732" y="210" font-size="13.3" fill="#283c59" font-weight="400">ATS-oriented resume in the</text>
+<text x="732" y="227" font-size="13.3" fill="#283c59" font-weight="400">candidate’s preferred format</text>
+<path d="M727 233H934" stroke="#e4edf5"/>
+<g transform="translate(674 243) scale(1)" fill="none" stroke="#e69a00" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 2h17l8 8v25H6zM23 2v9h8M12 17h13M12 23h13M12 29h8"/>
+</g>
+<text x="732" y="255" font-size="14.5" fill="#0a204a" font-weight="700">Highlight Key Matches</text>
+<text x="732" y="275" font-size="13.3" fill="#283c59" font-weight="400">Relevant experience, evidence,</text>
+<text x="732" y="292" font-size="13.3" fill="#283c59" font-weight="400">scale and measurable impact</text>
+<path d="M727 298H934" stroke="#e4edf5"/>
+<g transform="translate(674 308) scale(1)" fill="none" stroke="#e69a00" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 23l-4 4a7 7 0 01-10-10l8-8a7 7 0 0110 0M20 13l4-4a7 7 0 0110 10l-8 8a7 7 0 01-10 0M10 25l16-16"/>
+</g>
+<text x="732" y="320" font-size="14.5" fill="#0a204a" font-weight="700">Direct Apply Links</text>
+<text x="732" y="340" font-size="13.3" fill="#283c59" font-weight="400">Use verified employer links</text>
+<text x="732" y="357" font-size="13.3" fill="#283c59" font-weight="400">when available</text>
+<path d="M727 363H934" stroke="#e4edf5"/>
+<g transform="translate(674 373) scale(1)" fill="none" stroke="#e69a00" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1 15L34 2 23 34l-8-12-14-7M15 22L34 2"/>
+</g>
+<text x="732" y="385" font-size="14.5" fill="#0a204a" font-weight="700">Submit Application</text>
+<text x="732" y="405" font-size="13.3" fill="#283c59" font-weight="400">Candidate submits; track the</text>
+<text x="732" y="422" font-size="13.3" fill="#283c59" font-weight="400">application and confirmation</text>
+<path d="M946 274h11v-9l12 15-12 15v-9h-11z" fill="#29a4ff"/>
+<rect x="969" y="98" width="302" height="356" rx="9" fill="#ffffff" stroke="#6739b244"/>
+<rect x="969" y="98" width="302" height="65" rx="9" fill="url(#purple)" stroke="#6739b2"/>
+<circle cx="1006" cy="130" r="23" fill="#ffffff" stroke="#e1ebf7"/>
+<text x="999" y="139" font-size="26" fill="#6739b2" font-weight="700">4</text>
+<text x="1047" y="128" font-size="20" fill="#ffffff" font-weight="700">Track &amp; Monitor</text>
+<text x="1047" y="150" font-size="12.5" fill="#ffffff" font-weight="400">Stay organized and up to date</text>
+<g transform="translate(993 178) scale(1)" fill="none" stroke="#6739b2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<rect x="1" y="6" width="33" height="24" rx="3"/><path d="M2 8l16 13L34 8M2 29l10-10M34 29L24 19"/>
+</g>
+<text x="1051" y="190" font-size="14.5" fill="#0a204a" font-weight="700">Monitor Communications</text>
+<text x="1051" y="210" font-size="13.3" fill="#283c59" font-weight="400">Review authorized job-search</text>
+<text x="1051" y="227" font-size="13.3" fill="#283c59" font-weight="400">email and recruiter signals</text>
+<path d="M1046 233H1253" stroke="#e4edf5"/>
+<g transform="translate(993 243) scale(1)" fill="none" stroke="#6739b2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 33V22h6v11M15 33V13h6v20M26 33V3h6v30"/>
+</g>
+<text x="1051" y="255" font-size="14.5" fill="#0a204a" font-weight="700">Update Application Ledger</text>
+<text x="1051" y="275" font-size="13.3" fill="#283c59" font-weight="400">Track interviews, assessments,</text>
+<text x="1051" y="292" font-size="13.3" fill="#283c59" font-weight="400">deadlines and status changes</text>
+<path d="M1046 298H1253" stroke="#e4edf5"/>
+<g transform="translate(993 308) scale(1)" fill="none" stroke="#6739b2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 27h25l-4-6V12a9 9 0 00-18 0v9zM14 32a4 4 0 008 0M17 1v2"/>
+</g>
+<text x="1051" y="320" font-size="14.5" fill="#0a204a" font-weight="700">Identify Next Actions</text>
+<text x="1051" y="340" font-size="13.3" fill="#283c59" font-weight="400">Surface time-sensitive items</text>
+<text x="1051" y="357" font-size="13.3" fill="#283c59" font-weight="400">and required tasks</text>
+<path d="M1046 363H1253" stroke="#e4edf5"/>
+<g transform="translate(993 373) scale(1)" fill="none" stroke="#6739b2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M31 13A14 14 0 005 8L2 13M2 4v9h9M4 24a14 14 0 0026 4l3-5M24 23h9v9"/>
+</g>
+<text x="1051" y="385" font-size="14.5" fill="#0a204a" font-weight="700">Avoid Duplicate Effort</text>
+<text x="1051" y="405" font-size="13.3" fill="#283c59" font-weight="400">Exclude exact applied, closed,</text>
+<text x="1051" y="422" font-size="13.3" fill="#283c59" font-weight="400">rejected or withdrawn requisitions</text>
+<path d="M1265 274h11v-9l12 15-12 15v-9h-11z" fill="#29a4ff"/>
+<rect x="1288" y="98" width="302" height="356" rx="9" fill="#ffffff" stroke="#1467dc44"/>
+<rect x="1288" y="98" width="302" height="65" rx="9" fill="url(#bright)" stroke="#1467dc"/>
+<circle cx="1325" cy="130" r="23" fill="#ffffff" stroke="#e1ebf7"/>
+<text x="1318" y="139" font-size="26" fill="#1467dc" font-weight="700">5</text>
+<text x="1366" y="128" font-size="20" fill="#ffffff" font-weight="700">Recommend &amp; Iterate</text>
+<text x="1366" y="150" font-size="12.5" fill="#ffffff" font-weight="400">Surface the best next opportunities</text>
+<g transform="translate(1312 178) scale(1)" fill="none" stroke="#1467dc" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="16" cy="20" r="14"/><circle cx="16" cy="20" r="8"/><path d="M16 20L32 4M26 4h6v6"/>
+</g>
+<text x="1370" y="190" font-size="14.5" fill="#0a204a" font-weight="700">Rank New Opportunities</text>
+<text x="1370" y="210" font-size="13.3" fill="#283c59" font-weight="400">Rank by fit, compensation and</text>
+<text x="1370" y="227" font-size="13.3" fill="#283c59" font-weight="400">alignment with candidate goals</text>
+<path d="M1365 233H1572" stroke="#e4edf5"/>
+<g transform="translate(1312 243) scale(1)" fill="none" stroke="#1467dc" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 7h21M12 18h21M12 29h21"/><circle cx="3" cy="7" r="1.5"/><circle cx="3" cy="18" r="1.5"/><circle cx="3" cy="29" r="1.5"/>
+</g>
+<text x="1370" y="255" font-size="14.5" fill="#0a204a" font-weight="700">Provide Clear Guidance</text>
+<text x="1370" y="275" font-size="13.3" fill="#283c59" font-weight="400">APPLY / MAYBE / SKIP</text>
+<text x="1370" y="292" font-size="13.3" fill="#283c59" font-weight="400">with evidence and rationale</text>
+<path d="M1365 298H1572" stroke="#e4edf5"/>
+<g transform="translate(1312 308) scale(1)" fill="none" stroke="#1467dc" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M11 24a13 13 0 1114 0l-2 6H13zM14 34h8"/>
+</g>
+<text x="1370" y="320" font-size="14.5" fill="#0a204a" font-weight="700">Deliver New Resumes</text>
+<text x="1370" y="340" font-size="13.3" fill="#283c59" font-weight="400">Tailored to each role in the</text>
+<text x="1370" y="357" font-size="13.3" fill="#283c59" font-weight="400">candidate’s preferred format</text>
+<path d="M1365 363H1572" stroke="#e4edf5"/>
+<g transform="translate(1312 373) scale(1)" fill="none" stroke="#1467dc" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M31 13A14 14 0 005 8L2 13M2 4v9h9M4 24a14 14 0 0026 4l3-5M24 23h9v9"/>
+</g>
+<text x="1370" y="385" font-size="14.5" fill="#0a204a" font-weight="700">Continuous Improvement</text>
+<text x="1370" y="405" font-size="13.3" fill="#283c59" font-weight="400">Incorporate feedback, new roles</text>
+<text x="1370" y="422" font-size="13.3" fill="#283c59" font-weight="400">and market changes each run</text>
+<rect x="12" y="467" width="983" height="195" rx="10" fill="#ffffff" stroke="#d4e2f1"/>
+<text x="30" y="494" font-size="21" fill="#0a2149" font-weight="700">Illustrative Search Funnel</text>
+<text x="718" y="494" font-size="13" fill="#526582" font-weight="400">Synthetic counts · Not a live run</text>
+<path d="M22 513h177l22 59-22 59H22l21-59z" fill="url(#navy)" stroke="#ffffff"/>
+<text x="105" y="557" font-size="30" fill="#ffffff" font-weight="700">31</text>
+<text x="69" y="585" font-size="15" fill="#ffffff" font-weight="400">Fresh / current</text>
+<text x="69" y="606" font-size="15" fill="#ffffff" font-weight="400">roles found</text>
+<path d="M215 513h177l22 59-22 59H215l21-59z" fill="url(#cyan)" stroke="#ffffff"/>
+<text x="298" y="557" font-size="30" fill="#092b50" font-weight="700">18</text>
+<text x="262" y="585" font-size="15" fill="#092b50" font-weight="400">Unique roles</text>
+<text x="262" y="606" font-size="15" fill="#092b50" font-weight="400">after dedupe</text>
+<path d="M408 513h177l22 59-22 59H408l21-59z" fill="url(#lime)" stroke="#ffffff"/>
+<text x="491" y="557" font-size="30" fill="#0d2b26" font-weight="700">8</text>
+<text x="455" y="585" font-size="15" fill="#0d2b26" font-weight="400">Plausible</text>
+<text x="455" y="606" font-size="15" fill="#0d2b26" font-weight="400">senior-level matches</text>
+<path d="M601 513h177l22 59-22 59H601l21-59z" fill="url(#gold)" stroke="#ffffff"/>
+<text x="684" y="557" font-size="30" fill="#3f3005" font-weight="700">5</text>
+<text x="648" y="585" font-size="15" fill="#3f3005" font-weight="400">Fully evaluated</text>
+<text x="648" y="606" font-size="15" fill="#3f3005" font-weight="400">with details</text>
+<path d="M794 513h177l22 59-22 59H794l21-59z" fill="url(#orange)" stroke="#ffffff"/>
+<text x="877" y="557" font-size="30" fill="#ffffff" font-weight="700">4</text>
+<text x="841" y="585" font-size="15" fill="#ffffff" font-weight="400">Recommended</text>
+<text x="841" y="606" font-size="15" fill="#ffffff" font-weight="400">APPLY</text>
+<text x="32" y="648" font-size="13" fill="#526582" font-weight="400">Fully evaluated: 4 APPLY · 1 MAYBE · 0 SKIP. Other unique postings are filtered before scoring.</text>
+<rect x="1006" y="467" width="582" height="195" rx="10" fill="#ffffff" stroke="#d4e2f1"/>
+<text x="1022" y="494" font-size="21" fill="#0a2149" font-weight="700">Illustrative Role Weighting</text>
+<text x="1023" y="523" font-size="12.5" fill="#0a2149" font-weight="400">Solution / Cloud / Data Platform Architect</text>
+<rect x="1377" y="508" width="162.0" height="21" rx="2" fill="#0754af" stroke="none"/>
+<text x="1547.0" y="523" font-size="13" fill="#0a2149" font-weight="400">30%</text>
+<text x="1023" y="551" font-size="12.5" fill="#0a2149" font-weight="400">Azure Data &amp; AI / Databricks / Fabric Architect</text>
+<rect x="1377" y="536" width="135.0" height="21" rx="2" fill="#318af7" stroke="none"/>
+<text x="1520.0" y="551" font-size="13" fill="#0a2149" font-weight="400">25%</text>
+<text x="1023" y="579" font-size="12.5" fill="#0a2149" font-weight="400">Data Architect / Principal Data Architect</text>
+<rect x="1377" y="564" width="108.0" height="21" rx="2" fill="#79c2ff" stroke="none"/>
+<text x="1493.0" y="579" font-size="13" fill="#0a2149" font-weight="400">20%</text>
+<text x="1023" y="607" font-size="12.5" fill="#0a2149" font-weight="400">Senior / Staff / Principal Data Engineer</text>
+<rect x="1377" y="592" width="81.0" height="21" rx="2" fill="#a0deff" stroke="none"/>
+<text x="1466.0" y="607" font-size="13" fill="#0a2149" font-weight="400">15%</text>
+<text x="1023" y="635" font-size="12.5" fill="#0a2149" font-weight="400">Solutions Engineer / Sales Engineer</text>
+<rect x="1377" y="620" width="54.0" height="21" rx="2" fill="#cceffc" stroke="none"/>
+<text x="1439.0" y="635" font-size="13" fill="#0a2149" font-weight="400">10%</text>
+<rect x="12" y="675" width="1576" height="215" rx="10" fill="#ffffff" stroke="#d4e2f1"/>
+<text x="26" y="703" font-size="21" fill="#0a2149" font-weight="700">Example Applications &amp; Status</text>
+<text x="1232" y="703" font-size="13" fill="#526582" font-weight="400">All employers and records are synthetic</text>
+<rect x="24" y="715" width="302" height="164" rx="7" fill="#ffffff" stroke="#d8e5f1"/>
+<rect x="24" y="715" width="302" height="36" rx="7" fill="url(#green)" stroke="none"/>
+<text x="38" y="739" font-size="16" fill="#ffffff" font-weight="700">Applied</text>
+<text x="301" y="739" font-size="17" fill="#ffffff" font-weight="700">3</text>
+<text x="35" y="770" font-size="12.5" fill="#0a2149" font-weight="400">Example Co A — Data Architect</text>
+<text x="35" y="784" font-size="11" fill="#12854d" font-weight="400">Recorded submission</text>
+<text x="35" y="798" font-size="12.5" fill="#0a2149" font-weight="400">Example Co B — Platform Engineer</text>
+<text x="35" y="812" font-size="11" fill="#12854d" font-weight="400">Recorded submission</text>
+<text x="35" y="826" font-size="12.5" fill="#0a2149" font-weight="400">Example Co C — Solution Architect</text>
+<text x="35" y="840" font-size="11" fill="#12854d" font-weight="400">Recorded submission</text>
+<rect x="337" y="715" width="302" height="164" rx="7" fill="#ffffff" stroke="#d8e5f1"/>
+<rect x="337" y="715" width="302" height="36" rx="7" fill="url(#bright)" stroke="none"/>
+<text x="351" y="739" font-size="16" fill="#ffffff" font-weight="700">Ready to Apply</text>
+<text x="614" y="739" font-size="17" fill="#ffffff" font-weight="700">4</text>
+<text x="348" y="770" font-size="12.5" fill="#0a2149" font-weight="400">Example Co D — Solution Architect</text>
+<text x="348" y="784" font-size="11" fill="#2478db" font-weight="400">Tailored resume ready</text>
+<text x="348" y="798" font-size="12.5" fill="#0a2149" font-weight="400">Example Co E — Data Architect</text>
+<text x="348" y="812" font-size="11" fill="#2478db" font-weight="400">Evidence reviewed</text>
+<text x="348" y="826" font-size="12.5" fill="#0a2149" font-weight="400">Example Co F — Cloud Architect</text>
+<text x="348" y="840" font-size="11" fill="#2478db" font-weight="400">Direct link checked</text>
+<text x="348" y="854" font-size="12.5" fill="#0a2149" font-weight="400">Example Co G — Platform Architect</text>
+<text x="348" y="868" font-size="11" fill="#2478db" font-weight="400">Candidate review</text>
+<rect x="650" y="715" width="302" height="164" rx="7" fill="#ffffff" stroke="#d8e5f1"/>
+<rect x="650" y="715" width="302" height="36" rx="7" fill="url(#gold)" stroke="none"/>
+<text x="664" y="739" font-size="16" fill="#1c2b3e" font-weight="700">Interviewing</text>
+<text x="927" y="739" font-size="17" fill="#1c2b3e" font-weight="700">1</text>
+<text x="661" y="770" font-size="12.5" fill="#0a2149" font-weight="400">Example Co H — Principal Architect</text>
+<text x="661" y="784" font-size="11" fill="#b08100" font-weight="400">Interview scheduled</text>
+<rect x="963" y="715" width="302" height="164" rx="7" fill="#ffffff" stroke="#d8e5f1"/>
+<rect x="963" y="715" width="302" height="36" rx="7" fill="#e9eaec" stroke="none"/>
+<text x="977" y="739" font-size="16" fill="#1c2b3e" font-weight="700">On Hold / Maybe</text>
+<text x="1240" y="739" font-size="17" fill="#1c2b3e" font-weight="700">1</text>
+<text x="974" y="770" font-size="12.5" fill="#0a2149" font-weight="400">Example Co I — Senior Architect</text>
+<text x="974" y="784" font-size="11" fill="#666666" font-weight="400">Clarify requirements</text>
+<rect x="1276" y="715" width="302" height="164" rx="7" fill="#ffffff" stroke="#d8e5f1"/>
+<rect x="1276" y="715" width="302" height="36" rx="7" fill="#ffe1e4" stroke="none"/>
+<text x="1290" y="739" font-size="16" fill="#1c2b3e" font-weight="700">Excluded</text>
+<text x="1553" y="739" font-size="17" fill="#1c2b3e" font-weight="700">3</text>
+<text x="1287" y="770" font-size="12.5" fill="#0a2149" font-weight="400">Example Co J — Data Engineer</text>
+<text x="1287" y="784" font-size="11" fill="#b52938" font-weight="400">Exact requisition applied</text>
+<text x="1287" y="798" font-size="12.5" fill="#0a2149" font-weight="400">Example Co K — Solution Architect</text>
+<text x="1287" y="812" font-size="11" fill="#b52938" font-weight="400">Explicit rejection</text>
+<text x="1287" y="826" font-size="12.5" fill="#0a2149" font-weight="400">Example Co L — Lead Engineer</text>
+<text x="1287" y="840" font-size="11" fill="#b52938" font-weight="400">Withdrawn</text>
+<rect x="12" y="901" width="518" height="164" rx="10" fill="#ffffff" stroke="#693bb444"/>
+<rect x="12" y="901" width="518" height="37" rx="10" fill="#f3effa" stroke="none"/>
+<g transform="translate(27 907) scale(0.72)" fill="none" stroke="#693bb4" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<rect x="1" y="6" width="33" height="24" rx="3"/><path d="M2 8l16 13L34 8M2 29l10-10M34 29L24 19"/>
+</g>
+<text x="72" y="926" font-size="18" fill="#693bb4" font-weight="700">Communication Integration</text>
+<circle cx="38" cy="951" r="6.5" fill="#693bb4"/><path d="M35 951l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="54" y="956" font-size="13" fill="#0a2149" font-weight="400">Review candidate-authorized communication sources</text>
+<circle cx="38" cy="972" r="6.5" fill="#693bb4"/><path d="M35 972l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="54" y="977" font-size="13" fill="#0a2149" font-weight="400">Track interviews, calls, assessments and deadlines</text>
+<circle cx="38" cy="993" r="6.5" fill="#693bb4"/><path d="M35 993l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="54" y="998" font-size="13" fill="#0a2149" font-weight="400">Deduplicate repeated status notifications</text>
+<circle cx="38" cy="1014" r="6.5" fill="#693bb4"/><path d="M35 1014l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="54" y="1019" font-size="13" fill="#0a2149" font-weight="400">Never assume rejection from silence</text>
+<circle cx="38" cy="1035" r="6.5" fill="#693bb4"/><path d="M35 1035l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="54" y="1040" font-size="13" fill="#0a2149" font-weight="400">User-confirmed status overrides automated tracking</text>
+<rect x="541" y="901" width="518" height="164" rx="10" fill="#ffffff" stroke="#00868744"/>
+<rect x="541" y="901" width="518" height="37" rx="10" fill="#edf9f9" stroke="none"/>
+<g transform="translate(556 907) scale(0.72)" fill="none" stroke="#008687" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 2h17l8 8v25H6zM23 2v9h8M12 17h13M12 23h13M12 29h8"/>
+</g>
+<text x="601" y="926" font-size="18" fill="#008687" font-weight="700">Resume Generation</text>
+<circle cx="567" cy="951" r="6.5" fill="#008687"/><path d="M564 951l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="583" y="956" font-size="13" fill="#0a2149" font-weight="400">Tailor to each specific role and employer</text>
+<circle cx="567" cy="972" r="6.5" fill="#008687"/><path d="M564 972l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="583" y="977" font-size="13" fill="#0a2149" font-weight="400">Use the candidate’s chosen formatting and layout</text>
+<circle cx="567" cy="993" r="6.5" fill="#008687"/><path d="M564 993l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="583" y="998" font-size="13" fill="#0a2149" font-weight="400">Preserve authoritative roles, dates and certifications</text>
+<circle cx="567" cy="1014" r="6.5" fill="#008687"/><path d="M564 1014l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="583" y="1019" font-size="13" fill="#0a2149" font-weight="400">Use verified evidence and quantified outcomes</text>
+<circle cx="567" cy="1035" r="6.5" fill="#008687"/><path d="M564 1035l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="583" y="1040" font-size="13" fill="#0a2149" font-weight="400">Change emphasis without inventing experience</text>
+<rect x="1070" y="901" width="518" height="164" rx="10" fill="#ffffff" stroke="#086ae344"/>
+<rect x="1070" y="901" width="518" height="37" rx="10" fill="#edf4ff" stroke="none"/>
+<g transform="translate(1085 907) scale(0.72)" fill="none" stroke="#086ae3" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M31 13A14 14 0 005 8L2 13M2 4v9h9M4 24a14 14 0 0026 4l3-5M24 23h9v9"/>
+</g>
+<text x="1130" y="926" font-size="18" fill="#086ae3" font-weight="700">Continuous Process</text>
+<circle cx="1096" cy="951" r="6.5" fill="#086ae3"/><path d="M1093 951l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="1112" y="956" font-size="13" fill="#0a2149" font-weight="400">Run searches on the candidate’s configured cadence</text>
+<circle cx="1096" cy="972" r="6.5" fill="#086ae3"/><path d="M1093 972l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="1112" y="977" font-size="13" fill="#0a2149" font-weight="400">Add relevant new opportunities</text>
+<circle cx="1096" cy="993" r="6.5" fill="#086ae3"/><path d="M1093 993l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="1112" y="998" font-size="13" fill="#0a2149" font-weight="400">Reconcile existing applications with new signals</text>
+<circle cx="1096" cy="1014" r="6.5" fill="#086ae3"/><path d="M1093 1014l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="1112" y="1019" font-size="13" fill="#0a2149" font-weight="400">Adjust recommendations using candidate feedback</text>
+<circle cx="1096" cy="1035" r="6.5" fill="#086ae3"/><path d="M1093 1035l2 2 4-5" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<text x="1112" y="1040" font-size="13" fill="#0a2149" font-weight="400">Avoid repeating already-applied exact requisitions</text>
+<text x="20" y="1086" font-size="13" fill="#526582" font-weight="400">CareerOps reference architecture · Conceptual process; the repository does not provide live job, email or application connectors.</text>
+</g></svg>
