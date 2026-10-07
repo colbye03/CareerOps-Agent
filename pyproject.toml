@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "careerops-agent"
-version = "0.1.0"
+version = "0.2.0"
 description = "Reference implementation for an AI-assisted career intelligence workflow"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "Ed Colby" }]
-dependencies = []
+dependencies = ["jsonschema>=4.21,<5"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
@@ -21,3 +21,9 @@ where = ["src"]
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
+
+[project.scripts]
+careerops = "careerops.cli:main"
+
+[tool.setuptools.package-data]
+careerops = ["resources/**/*.json"]

@@ -1,26 +1,15 @@
 [
   {
-    "company": "Example Health Analytics",
-    "title": "Principal Data Platform Architect",
-    "requisition_id": "EX-1042",
-    "application_date": "2026-10-01",
-    "latest_communication_date": "2026-10-03T15:30:00Z",
-    "status": "recruiter_review",
-    "status_source": "recruiter",
-    "source_authority": 4,
-    "next_action": "Prepare for recruiter screen",
-    "deadline": null
-  },
-  {
-    "company": "Example Cloud Co",
-    "title": "Staff Data Engineer",
-    "requisition_id": "EX-887",
-    "application_date": "2026-09-25",
-    "latest_communication_date": "2026-09-25T20:00:00Z",
-    "status": "no_meaningful_response_yet",
-    "status_source": "employer_automated_email",
-    "source_authority": 2,
-    "next_action": null,
-    "deadline": null
+    "job_id": "8d52213a3a3e0871",
+    "events": [
+      {
+        "status": "applied",
+        "source": "user_confirmed",
+        "observed_at": "2026-10-01T12:00:00+00:00"
+      }
+    ],
+    "status": "applied",
+    "source": "user_confirmed",
+    "observed_at": "2026-10-01T12:00:00+00:00"
   }
 ]

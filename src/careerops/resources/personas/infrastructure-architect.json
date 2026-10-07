@@ -1,0 +1,195 @@
+{
+  "profile": {
+    "schema_version": 1,
+    "id": "infrastructure-architect",
+    "display_name": "Synthetic Infrastructure Architect",
+    "role_packs": [
+      "infrastructure-architect",
+      "solution-architect"
+    ],
+    "skills": [],
+    "clearances": [],
+    "search_policy": {
+      "work_modes": [
+        "remote"
+      ],
+      "locations": [],
+      "minimum_salary": 120000,
+      "currency": "USD",
+      "apply_threshold": 85,
+      "maybe_threshold": 65,
+      "minimum_requirement_coverage": 0.4
+    },
+    "hard_exclusions": {
+      "companies": [],
+      "terms": [],
+      "require_known_salary": false
+    }
+  },
+  "evidence": [
+    {
+      "id": "infrastructure-architect-cloud",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated cloud infrastructure, azure, aws; completed review with delivery team.",
+      "skills": [
+        "cloud infrastructure",
+        "azure",
+        "aws"
+      ],
+      "capabilities": [
+        "cloud"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://infrastructure-architect/cloud"
+    },
+    {
+      "id": "infrastructure-architect-networking",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated networking, dns, routing; completed review with delivery team.",
+      "skills": [
+        "networking",
+        "dns",
+        "routing"
+      ],
+      "capabilities": [
+        "networking"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://infrastructure-architect/networking"
+    },
+    {
+      "id": "infrastructure-architect-security",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated iam, security; completed review with delivery team.",
+      "skills": [
+        "iam",
+        "security"
+      ],
+      "capabilities": [
+        "security"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://infrastructure-architect/security"
+    },
+    {
+      "id": "infrastructure-architect-automation",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated iac, terraform; completed review with delivery team.",
+      "skills": [
+        "iac",
+        "terraform"
+      ],
+      "capabilities": [
+        "automation"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://infrastructure-architect/automation"
+    },
+    {
+      "id": "infrastructure-architect-resilience",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated resiliency, disaster recovery, dr; completed review with delivery team.",
+      "skills": [
+        "resiliency",
+        "disaster recovery",
+        "dr"
+      ],
+      "capabilities": [
+        "resilience"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://infrastructure-architect/resilience"
+    },
+    {
+      "id": "infrastructure-architect-platform",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated kubernetes, observability; completed review with delivery team.",
+      "skills": [
+        "kubernetes",
+        "observability"
+      ],
+      "capabilities": [
+        "platform"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://infrastructure-architect/platform"
+    },
+    {
+      "id": "infrastructure-architect-leadership",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated architecture leadership, architecture; completed review with delivery team.",
+      "skills": [
+        "architecture leadership",
+        "architecture"
+      ],
+      "capabilities": [
+        "leadership"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://infrastructure-architect/leadership"
+    }
+  ]
+}

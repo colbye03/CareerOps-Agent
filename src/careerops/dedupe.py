@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from collections.abc import Iterable
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 
 SOURCE_PRIORITY = {
@@ -25,15 +25,18 @@ def normalize_url(url: str | None) -> str:
     if not url:
         return ""
     parts = urlsplit(url)
+    # Preserve ATS identity parameters; discard known tracking parameters only.
+    query = urlencode(sorted((k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
+                             if not k.lower().startswith("utm_") and k.lower() not in {"gclid", "fbclid"}))
     return urlunsplit(
-        (parts.scheme.lower(), parts.netloc.lower(), parts.path.rstrip("/"), "", "")
+        (parts.scheme.lower(), parts.netloc.lower(), parts.path.rstrip("/"), query, "")
     )
 
 
 def job_identity(job: dict) -> tuple[str, ...]:
     """Build an identity key, preferring exact requisition IDs."""
     company = normalize_text(job.get("company"))
-    req_id = normalize_text(job.get("requisition_id"))
+    req_id = str(job.get("requisition_id") or "").strip().casefold()
 
     if company and req_id:
         return ("req", company, req_id)

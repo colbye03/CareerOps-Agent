@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "ai-architect",
+  "name": "AI Architect",
+  "title_aliases": [
+    "ai architect",
+    "ai solution architect"
+  ],
+  "dimensions": [
+    {
+      "id": "llm_architecture",
+      "weight": 0.125,
+      "terms": [
+        "llm architecture",
+        "rag"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "agents",
+      "weight": 0.125,
+      "terms": [
+        "agents",
+        "tool calling"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "retrieval",
+      "weight": 0.125,
+      "terms": [
+        "embeddings",
+        "vector search"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "serving",
+      "weight": 0.125,
+      "terms": [
+        "model serving"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "quality",
+      "weight": 0.125,
+      "terms": [
+        "evaluation",
+        "guardrails"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "lifecycle",
+      "weight": 0.125,
+      "terms": [
+        "ml lifecycle"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "governance",
+      "weight": 0.125,
+      "terms": [
+        "security",
+        "governance"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "integration",
+      "weight": 0.125,
+      "terms": [
+        "data platform",
+        "integration"
+      ],
+      "required_level": 3
+    }
+  ]
+}

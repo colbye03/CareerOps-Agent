@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "ai-engineer",
+  "name": "AI Engineer",
+  "title_aliases": [
+    "ai engineer",
+    "machine learning engineer"
+  ],
+  "dimensions": [
+    {
+      "id": "implementation",
+      "weight": 0.2,
+      "terms": [
+        "python",
+        "llm",
+        "rag"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "agents",
+      "weight": 0.2,
+      "terms": [
+        "agents",
+        "tool calling"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "retrieval",
+      "weight": 0.2,
+      "terms": [
+        "embeddings",
+        "vector search"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "operations",
+      "weight": 0.2,
+      "terms": [
+        "model serving",
+        "evaluation",
+        "ml lifecycle"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "safety",
+      "weight": 0.2,
+      "terms": [
+        "guardrails",
+        "security"
+      ],
+      "required_level": 3
+    }
+  ]
+}

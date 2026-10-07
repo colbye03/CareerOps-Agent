@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "data-platform-architect",
+  "name": "Data Platform Architect",
+  "title_aliases": [
+    "data architect",
+    "cloud architect",
+    "data platform architect"
+  ],
+  "dimensions": [
+    {
+      "id": "platform",
+      "weight": 0.25,
+      "terms": [
+        "data platform",
+        "lakehouse",
+        "warehouse",
+        "databricks",
+        "fabric"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "governance",
+      "weight": 0.25,
+      "terms": [
+        "governance",
+        "lineage",
+        "catalog",
+        "security"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "integration",
+      "weight": 0.25,
+      "terms": [
+        "integration",
+        "pipelines",
+        "streaming"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "leadership",
+      "weight": 0.25,
+      "terms": [
+        "architecture",
+        "stakeholder",
+        "strategy"
+      ],
+      "required_level": 3
+    }
+  ]
+}
