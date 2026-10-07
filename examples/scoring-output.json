@@ -1,0 +1,15 @@
+{
+  "job_key": "example health analytics|principal data platform architect|EX-1042",
+  "hard_exclusion": null,
+  "fit_score": 92.0,
+  "decision": "APPLY",
+  "strongest_matches": [
+    "Databricks and Spark platform depth",
+    "architecture ownership",
+    "regulated-domain experience",
+    "remote work arrangement"
+  ],
+  "risks": [
+    "Confirm depth of any employer-specific governance tooling"
+  ]
+}
