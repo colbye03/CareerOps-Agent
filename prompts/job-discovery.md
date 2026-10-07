@@ -2,7 +2,7 @@
 
 ## Goal
 
-Find current, high-fit openings for the candidate-selected role packs while preserving source metadata and avoiding duplicated effort.
+Find current, high-fit technical openings while preserving source metadata and avoiding duplicated effort.
 
 ## Instructions
 
@@ -18,7 +18,7 @@ For every candidate posting, extract:
 - source and source URL
 - verified direct employer apply URL when available
 - required technologies
-- role responsibilities, seniority and delivery scope
+- architecture / engineering scope
 - domain requirements
 - clearance, degree, travel, or other hard constraints
 
