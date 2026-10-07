@@ -174,150 +174,6 @@
     {
       "job": {
         "title": "Solution Architect",
-        "company": "Synthetic Shared",
-        "description": "Requirements: architecture, integration, cloud, security, stakeholder, strategy, communication.",
-        "location": "US",
-        "work_mode": "remote",
-        "requisition_id": "SHARED-1",
-        "source": "employer",
-        "id": "cfbd18ba1e506b75"
-      },
-      "role_pack": "solution-architect",
-      "score": 58.34,
-      "decision": "SKIP",
-      "dimensions": [
-        {
-          "id": "design",
-          "weight": 0.25,
-          "score": 66.67,
-          "requirements": [
-            "architecture",
-            "requirements",
-            "integration"
-          ],
-          "evidence": [
-            {
-              "evidence_id": "data-cloud-architect-integration",
-              "matched_terms": [
-                "integration"
-              ],
-              "level": 3,
-              "source": "synthetic://data-cloud-architect/integration",
-              "summary": "Synthetic project demonstrated integration, pipelines, streaming; completed review with delivery team.",
-              "metrics": [
-                {
-                  "name": "Synthetic benchmark improvement",
-                  "value": 20,
-                  "unit": "percent",
-                  "context": "Illustrative fixture, not a real career outcome"
-                }
-              ]
-            },
-            {
-              "evidence_id": "data-cloud-architect-leadership",
-              "matched_terms": [
-                "architecture"
-              ],
-              "level": 3,
-              "source": "synthetic://data-cloud-architect/leadership",
-              "summary": "Synthetic project demonstrated architecture, stakeholder, strategy; completed review with delivery team.",
-              "metrics": [
-                {
-                  "name": "Synthetic benchmark improvement",
-                  "value": 20,
-                  "unit": "percent",
-                  "context": "Illustrative fixture, not a real career outcome"
-                }
-              ]
-            }
-          ],
-          "gaps": [
-            "requirements"
-          ]
-        },
-        {
-          "id": "cloud",
-          "weight": 0.25,
-          "score": 0.0,
-          "requirements": [
-            "cloud"
-          ],
-          "evidence": [],
-          "gaps": [
-            "cloud"
-          ]
-        },
-        {
-          "id": "security",
-          "weight": 0.25,
-          "score": 100.0,
-          "requirements": [
-            "security"
-          ],
-          "evidence": [
-            {
-              "evidence_id": "data-cloud-architect-governance",
-              "matched_terms": [
-                "security"
-              ],
-              "level": 3,
-              "source": "synthetic://data-cloud-architect/governance",
-              "summary": "Synthetic project demonstrated governance, lineage, catalog, security; completed review with delivery team.",
-              "metrics": [
-                {
-                  "name": "Synthetic benchmark improvement",
-                  "value": 20,
-                  "unit": "percent",
-                  "context": "Illustrative fixture, not a real career outcome"
-                }
-              ]
-            }
-          ],
-          "gaps": []
-        },
-        {
-          "id": "leadership",
-          "weight": 0.25,
-          "score": 66.67,
-          "requirements": [
-            "stakeholder",
-            "strategy",
-            "communication"
-          ],
-          "evidence": [
-            {
-              "evidence_id": "data-cloud-architect-leadership",
-              "matched_terms": [
-                "stakeholder",
-                "strategy"
-              ],
-              "level": 3,
-              "source": "synthetic://data-cloud-architect/leadership",
-              "summary": "Synthetic project demonstrated architecture, stakeholder, strategy; completed review with delivery team.",
-              "metrics": [
-                {
-                  "name": "Synthetic benchmark improvement",
-                  "value": 20,
-                  "unit": "percent",
-                  "context": "Illustrative fixture, not a real career outcome"
-                }
-              ]
-            }
-          ],
-          "gaps": [
-            "communication"
-          ]
-        }
-      ],
-      "recognized_weight": 1.0,
-      "warnings": [
-        "Compensation cannot be compared to the configured floor."
-      ],
-      "exclusion": null
-    },
-    {
-      "job": {
-        "title": "Solution Architect",
         "company": "Synthetic Company 1",
         "description": "Requirements: architecture, requirements, integration, cloud, azure, aws, security, iam, governance, stakeholder, strategy, communication",
         "location": "US",
@@ -470,6 +326,155 @@
       ],
       "recognized_weight": 1.0,
       "warnings": [],
+      "exclusion": null
+    },
+    {
+      "job": {
+        "title": "Solution Architect",
+        "company": "Synthetic Shared",
+        "description": "Requirements: architecture, integration, cloud, azure, security, iam, stakeholder, strategy, communication.",
+        "location": "US",
+        "work_mode": "remote",
+        "requisition_id": "SHARED-1",
+        "source": "employer",
+        "id": "cfbd18ba1e506b75"
+      },
+      "role_pack": "solution-architect",
+      "score": 45.84,
+      "decision": "SKIP",
+      "dimensions": [
+        {
+          "id": "design",
+          "weight": 0.25,
+          "score": 66.67,
+          "requirements": [
+            "architecture",
+            "requirements",
+            "integration"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "data-cloud-architect-integration",
+              "matched_terms": [
+                "integration"
+              ],
+              "level": 3,
+              "source": "synthetic://data-cloud-architect/integration",
+              "summary": "Synthetic project demonstrated integration, pipelines, streaming; completed review with delivery team.",
+              "metrics": [
+                {
+                  "name": "Synthetic benchmark improvement",
+                  "value": 20,
+                  "unit": "percent",
+                  "context": "Illustrative fixture, not a real career outcome"
+                }
+              ]
+            },
+            {
+              "evidence_id": "data-cloud-architect-leadership",
+              "matched_terms": [
+                "architecture"
+              ],
+              "level": 3,
+              "source": "synthetic://data-cloud-architect/leadership",
+              "summary": "Synthetic project demonstrated architecture, stakeholder, strategy; completed review with delivery team.",
+              "metrics": [
+                {
+                  "name": "Synthetic benchmark improvement",
+                  "value": 20,
+                  "unit": "percent",
+                  "context": "Illustrative fixture, not a real career outcome"
+                }
+              ]
+            }
+          ],
+          "gaps": [
+            "requirements"
+          ]
+        },
+        {
+          "id": "cloud",
+          "weight": 0.25,
+          "score": 0.0,
+          "requirements": [
+            "cloud",
+            "azure"
+          ],
+          "evidence": [],
+          "gaps": [
+            "cloud",
+            "azure"
+          ]
+        },
+        {
+          "id": "security",
+          "weight": 0.25,
+          "score": 50.0,
+          "requirements": [
+            "security",
+            "iam"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "data-cloud-architect-governance",
+              "matched_terms": [
+                "security"
+              ],
+              "level": 3,
+              "source": "synthetic://data-cloud-architect/governance",
+              "summary": "Synthetic project demonstrated governance, lineage, catalog, security; completed review with delivery team.",
+              "metrics": [
+                {
+                  "name": "Synthetic benchmark improvement",
+                  "value": 20,
+                  "unit": "percent",
+                  "context": "Illustrative fixture, not a real career outcome"
+                }
+              ]
+            }
+          ],
+          "gaps": [
+            "iam"
+          ]
+        },
+        {
+          "id": "leadership",
+          "weight": 0.25,
+          "score": 66.67,
+          "requirements": [
+            "stakeholder",
+            "strategy",
+            "communication"
+          ],
+          "evidence": [
+            {
+              "evidence_id": "data-cloud-architect-leadership",
+              "matched_terms": [
+                "stakeholder",
+                "strategy"
+              ],
+              "level": 3,
+              "source": "synthetic://data-cloud-architect/leadership",
+              "summary": "Synthetic project demonstrated architecture, stakeholder, strategy; completed review with delivery team.",
+              "metrics": [
+                {
+                  "name": "Synthetic benchmark improvement",
+                  "value": 20,
+                  "unit": "percent",
+                  "context": "Illustrative fixture, not a real career outcome"
+                }
+              ]
+            }
+          ],
+          "gaps": [
+            "communication"
+          ]
+        }
+      ],
+      "recognized_weight": 1.0,
+      "warnings": [
+        "Compensation cannot be compared to the configured floor."
+      ],
       "exclusion": null
     },
     {

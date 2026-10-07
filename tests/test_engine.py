@@ -39,6 +39,7 @@ def test_same_job_different_candidates():
         result = next(r for r in run(*inputs(name))['results'] if r['job'].get('requisition_id') == 'SHARED-1')
         scores.append(result['score'])
     assert len(set(scores)) == 3
+    assert all(abs(a - b) > 10 for i, a in enumerate(scores) for b in scores[i + 1:])
 
 
 def test_unverified_evidence_never_becomes_resume_claim():
