@@ -1,7 +1,3 @@
-"""Legacy v0.1 explicit-input scorer; the CLI uses the generic engine instead.
-
-Kept for API compatibility only. New integrations should use careerops.engine.run.
-"""
 from __future__ import annotations
 
 from dataclasses import dataclass, fields

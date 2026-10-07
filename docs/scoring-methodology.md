@@ -1,19 +1,59 @@
-# Candidate-specific fit scoring
+# Scoring Methodology
 
-Role packs define all role vocabulary, dimension weights, and expected evidence levels. The engine has no TPM, AI, infrastructure or data-platform branches. Candidate profiles select eligible packs and thresholds.
+CareerOps uses a weighted 0-100 fit score after hard exclusions.
 
-1. Route a posting using title aliases among candidate-selected packs; ties preserve the candidate's pack order. A title outside those packs is SKIP.
-2. Run deterministic exclusions before evidence scoring: work mode, configured locations, blocked companies/terms, clearance, comparable salary floor, and existing exact-job applications.
-3. For each pack dimension, recognize requirement terms in the job description using case-insensitive phrase boundaries. This baseline treats every recognized term as a requirement; it does not yet parse preferred versus mandatory wording or negation.
-4. Retrieve verified evidence per dimension. For each term, evidence credit is `min(1, highest demonstrated level / required level)`. Levels 1–5 represent exposure through expert leadership. Declared skills receive at most 0.25 credit; they cannot produce resume claims.
-5. Average term credit within each recognized dimension, then compute the weighted average across recognized dimensions. Absent dimensions do not silently count as demonstrated experience.
-6. Record recognized pack weight. If below the candidate's minimum coverage, return MAYBE and a manual-review warning, including when nothing is recognized.
-7. Apply candidate-configured APPLY and MAYBE thresholds. Exclusions always return SKIP with no score.
+## Default weights
 
-The output cites matched evidence and sources, recognized terms, dimension scores, partial/missing proficiency gaps, pack ID and warnings. Missing/foreign-currency salaries receive a warning or exclusion when known salary is mandatory. Currency conversion and compensation prediction are not implemented.
+| Dimension | Weight |
+|---|---:|
+| Platform / technical alignment | 25% |
+| Architecture alignment | 20% |
+| Seniority / scope | 15% |
+| Relevant domain experience | 10% |
+| Compensation | 10% |
+| Location / work arrangement | 10% |
+| Interview probability | 5% |
+| Career-direction alignment | 5% |
 
-A 100 score means complete evidence coverage of **recognized requirements**, not universal qualification. Sparse or misparsed descriptions require review. The current model does not infer employment duration, seniority, certification eligibility, or interview likelihood. Role pack versions and deterministic inputs are the unit of reproducibility.
+Each dimension is scored from 0 to 100.
 
-The funnel counts plausible title matches before exclusions, evaluated jobs after exclusions, and final decisions across every unique posting. `excluded + fully_evaluated = unique`, and `apply + maybe + skip = unique`. Duplicate postings never count twice. Excluded jobs are included in SKIP totals and have separate reasons.
+```text
+fit_score = Σ(dimension_score × dimension_weight)
+```
 
-The legacy v0.1 explicit-input scorer is retained for compatibility only; its architecture-biased weights are not used by the reusable engine.
+## Decision thresholds
+
+- **APPLY**: 85+
+- **MAYBE**: 70-84.99
+- **SKIP**: below 70
+
+Thresholds are configurable.
+
+## Hard exclusions
+
+Hard exclusions run before scoring. A 98/100 role should still be excluded when, for example:
+
+- the exact requisition was already submitted
+- the exact requisition was already rejected or withdrawn
+- the employer is explicitly blacklisted
+- an active clearance is mandatory and the candidate does not hold it
+- compensation is below a configured non-negotiable floor
+
+A company is not globally excluded merely because one requisition was rejected.
+
+## Interview probability
+
+Interview probability is intentionally low-weight because it is uncertain. It can incorporate direct platform experience, scale evidence, domain overlap, seniority match, location alignment, and hard requirements.
+
+It should never be presented as a guaranteed probability of interview.
+
+## Explainability
+
+Every recommendation should expose:
+
+- final fit score
+- strongest matches
+- material gaps/risks
+- hard-exclusion result
+- APPLY / MAYBE / SKIP
+- source and verified application link when available

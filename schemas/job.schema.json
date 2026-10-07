@@ -1,76 +1,22 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CareerOps Job",
   "type": "object",
+  "required": ["company", "title", "source", "source_url"],
   "properties": {
-    "title": {
-      "type": "string",
-      "minLength": 1
-    },
-    "company": {
-      "type": "string",
-      "minLength": 1
-    },
-    "description": {
-      "type": "string",
-      "minLength": 1
-    },
-    "location": {
-      "type": "string",
-      "minLength": 1
-    },
-    "work_mode": {
-      "enum": [
-        "remote",
-        "hybrid",
-        "onsite"
-      ]
-    },
-    "requisition_id": {
-      "type": "string",
-      "minLength": 1
-    },
-    "apply_url": {
-      "type": "string",
-      "minLength": 1
-    },
-    "source": {
-      "type": "string",
-      "minLength": 1
-    },
-    "clearance": {
-      "type": "string",
-      "minLength": 1
-    },
-    "salary": {
-      "type": "object",
-      "properties": {
-        "min": {
-          "type": "number",
-          "minimum": 0
-        },
-        "max": {
-          "type": "number",
-          "minimum": 0
-        },
-        "currency": {
-          "type": "string",
-          "minLength": 1
-        }
-      },
-      "required": [
-        "min",
-        "max",
-        "currency"
-      ],
-      "additionalProperties": false
-    }
+    "company": {"type": "string"},
+    "title": {"type": "string"},
+    "requisition_id": {"type": ["string", "null"]},
+    "source": {"type": "string"},
+    "source_url": {"type": "string", "format": "uri"},
+    "apply_url": {"type": ["string", "null"], "format": "uri"},
+    "location": {"type": ["string", "null"]},
+    "work_arrangement": {"enum": ["remote", "hybrid", "onsite", "unknown"]},
+    "compensation_min": {"type": ["number", "null"]},
+    "compensation_max": {"type": ["number", "null"]},
+    "currency": {"type": ["string", "null"]},
+    "requirements": {"type": "array", "items": {"type": "string"}},
+    "preferred_qualifications": {"type": "array", "items": {"type": "string"}}
   },
-  "required": [
-    "title",
-    "company",
-    "description",
-    "location",
-    "work_mode"
-  ],
-  "additionalProperties": false,
-  "$schema": "https://json-schema.org/draft/2020-12/schema"
+  "additionalProperties": true
 }

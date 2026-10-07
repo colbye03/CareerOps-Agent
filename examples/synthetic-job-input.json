@@ -1,176 +1,25 @@
-[
-  {
-    "title": "Data Platform Architect",
-    "company": "Synthetic Company 0",
-    "description": "Requirements: data platform, lakehouse, warehouse, databricks, fabric, governance, lineage, catalog, security, integration, pipelines, streaming, architecture, stakeholder, strategy",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-0",
-    "apply_url": "https://example.invalid/jobs/0",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Solution Architect",
-    "company": "Synthetic Company 1",
-    "description": "Requirements: architecture, requirements, integration, cloud, azure, aws, security, iam, governance, stakeholder, strategy, communication",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-1",
-    "apply_url": "https://example.invalid/jobs/1",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Infrastructure Architect",
-    "company": "Synthetic Company 2",
-    "description": "Requirements: cloud infrastructure, azure, aws, networking, dns, routing, iam, security, iac, terraform, resiliency, disaster recovery, dr, kubernetes, observability, architecture leadership, architecture",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-2",
-    "apply_url": "https://example.invalid/jobs/2",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Data Engineer",
-    "company": "Synthetic Company 3",
-    "description": "Requirements: pipelines, etl, elt, streaming, sql, python, spark, data modeling, warehouse, testing, observability, data quality, delivery, collaboration",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-3",
-    "apply_url": "https://example.invalid/jobs/3",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "AI Engineer",
-    "company": "Synthetic Company 4",
-    "description": "Requirements: python, llm, rag, agents, tool calling, embeddings, vector search, model serving, evaluation, ml lifecycle, guardrails, security",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-4",
-    "apply_url": "https://example.invalid/jobs/4",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "AI Architect",
-    "company": "Synthetic Company 5",
-    "description": "Requirements: llm architecture, rag, agents, tool calling, embeddings, vector search, model serving, evaluation, guardrails, ml lifecycle, security, governance, data platform, integration",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-5",
-    "apply_url": "https://example.invalid/jobs/5",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Technical Program Manager",
-    "company": "Synthetic Company 6",
-    "description": "Requirements: program delivery, delivery, stakeholder management, stakeholder, roadmap strategy, roadmap, dependencies, risk management, risk, technical depth, architecture, executive communication, communication",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-6",
-    "apply_url": "https://example.invalid/jobs/6",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Product Manager",
-    "company": "Synthetic Company 7",
-    "description": "Requirements: product strategy, roadmap, discovery, customer research, prioritization, metrics, experimentation, delivery, stakeholder",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-7",
-    "apply_url": "https://example.invalid/jobs/7",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Software Engineer",
-    "company": "Synthetic Company 8",
-    "description": "Requirements: python, java, typescript, system design, api, testing, code review, ci/cd, observability, collaboration, delivery",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-8",
-    "apply_url": "https://example.invalid/jobs/8",
-    "source": "employer",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Data Platform Architect",
-    "company": "Synthetic Company 0",
-    "description": "Requirements: data platform, lakehouse, warehouse, databricks, fabric, governance, lineage, catalog, security, integration, pipelines, streaming, architecture, stakeholder, strategy",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "DEMO-0",
-    "apply_url": "https://example.invalid/jobs/0",
-    "source": "other",
-    "salary": {
-      "min": 140000,
-      "max": 180000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Data Platform Architect",
-    "company": "Synthetic Company 0",
-    "description": "Requirements: data platform, lakehouse, warehouse, databricks, fabric, governance, lineage, catalog, security, integration, pipelines, streaming, architecture, stakeholder, strategy",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "LOW-SALARY",
-    "apply_url": "https://example.invalid/jobs/0",
-    "source": "employer",
-    "salary": {
-      "min": 60000,
-      "max": 80000,
-      "currency": "USD"
-    }
-  },
-  {
-    "title": "Solution Architect",
-    "company": "Synthetic Shared",
-    "description": "Requirements: architecture, integration, cloud, azure, security, iam, stakeholder, strategy, communication.",
-    "location": "US",
-    "work_mode": "remote",
-    "requisition_id": "SHARED-1",
-    "source": "employer"
-  }
-]
+{
+  "company": "Example Health Analytics",
+  "title": "Principal Data Platform Architect",
+  "requisition_id": "EX-1042",
+  "source": "employer",
+  "source_url": "https://example.com/careers/EX-1042",
+  "apply_url": "https://example.com/careers/EX-1042/apply",
+  "location": "United States",
+  "work_arrangement": "remote",
+  "compensation_min": 185000,
+  "compensation_max": 235000,
+  "currency": "USD",
+  "requirements": [
+    "Databricks",
+    "Spark",
+    "cloud data architecture",
+    "governance",
+    "stakeholder leadership"
+  ],
+  "preferred_qualifications": [
+    "healthcare experience",
+    "Unity Catalog",
+    "Microsoft Fabric"
+  ]
+}
