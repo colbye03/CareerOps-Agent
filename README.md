@@ -16,6 +16,18 @@ Rather than treating job search as a one-shot prompt, the project models it as a
 
 > **Privacy note:** This public repository contains no credentials, private email content, recruiter conversations, resumes, or real application-history data. Examples are synthetic.
 
+## Workflow overview
+
+![CareerOps workflow: search, evaluate, prepare, track and iterate, with a synthetic search funnel and application examples](docs/assets/careerops-workflow.svg)
+
+[View the full-size workflow diagram](docs/assets/careerops-workflow.svg). Counts, role weights, employers and application records in the diagram are illustrative. It describes the reference workflow, not a live dashboard or implemented external integrations.
+
+## Workflow overview
+
+![CareerOps workflow: search, evaluate, prepare, track and iterate, with a synthetic search funnel and application examples](docs/assets/careerops-workflow.svg)
+
+[View the full-size workflow diagram](docs/assets/careerops-workflow.svg). Counts, role weights, employers and application records in the diagram are illustrative. It describes the reference workflow, not a live dashboard or implemented external integrations.
+
 ## Why this project exists
 
 Most job-search automations stop at scraping listings. CareerOps focuses on the harder system-design problems around the search:
