@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "solution-architect",
+  "name": "Solution Architect",
+  "title_aliases": [
+    "solution architect",
+    "solutions architect"
+  ],
+  "dimensions": [
+    {
+      "id": "design",
+      "weight": 0.25,
+      "terms": [
+        "architecture",
+        "requirements",
+        "integration"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "cloud",
+      "weight": 0.25,
+      "terms": [
+        "cloud",
+        "azure",
+        "aws"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "security",
+      "weight": 0.25,
+      "terms": [
+        "security",
+        "iam",
+        "governance"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "leadership",
+      "weight": 0.25,
+      "terms": [
+        "stakeholder",
+        "strategy",
+        "communication"
+      ],
+      "required_level": 3
+    }
+  ]
+}

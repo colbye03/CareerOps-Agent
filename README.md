@@ -2,214 +2,126 @@
 
 [![tests](https://github.com/colbye03/CareerOps-Agent/actions/workflows/test.yml/badge.svg)](https://github.com/colbye03/CareerOps-Agent/actions/workflows/test.yml)
 
-CareerOps Agent is an AI-assisted career intelligence workflow for discovering, deduplicating, scoring, tracking, and preparing applications for high-fit technical roles.
+A candidate-specific career intelligence engine with configurable role packs, grounded evidence retrieval, explainable scoring, and an application event ledger. Career-specific vocabulary and weights live in data files, not engine branches.
 
-Rather than treating job search as a one-shot prompt, the project models it as a repeatable operating system:
+The runnable reference implementation is local-first and deterministic. It demonstrates orchestration and the retrieval boundary without requiring an LLM, vector database, credentials, or a paid job feed. All included personas, jobs, evidence, and status examples are synthetic. It does not submit applications, send communications, access email, or modify a ChatGPT job-search workflow.
 
-1. **Search & collect** current openings from multiple sources.
-2. **Deduplicate & normalize** overlapping postings.
-3. **Evaluate fit** with explicit scoring criteria and hard exclusions.
-4. **Prepare applications** with role-specific resume guidance and verified apply links.
-5. **Track state** across applications, interviews, assessments, rejections, and withdrawals.
-6. **Reconcile communications** without inferring rejection from silence.
-7. **Iterate continuously** as preferences, market conditions, and application status change.
+## Run the product
 
-> **Privacy note:** This public repository contains no credentials, private email content, recruiter conversations, resumes, or real application-history data. Examples are synthetic.
-
-## Why this project exists
-
-Most job-search automations stop at scraping listings. CareerOps focuses on the harder system-design problems around the search:
-
-- How do you rank opportunities against a candidate's actual direction, not just keyword overlap?
-- How do you prevent duplicate effort across LinkedIn, Indeed, employer sites, and alerts?
-- How do you reconcile stale automated emails with higher-authority recruiter or portal status?
-- How do you preserve truthful career history while tailoring a resume to each role?
-- How do you turn an AI assistant into a governed decision-support workflow rather than an opaque recommendation engine?
-
-## Workflow
-
-```mermaid
-flowchart LR
-    A[Search & Collect] --> B[Normalize & Deduplicate]
-    B --> C{Hard Exclusions}
-    C -->|Pass| D[Fit Scoring]
-    C -->|Fail| X[Exclude / Archive]
-    D --> E{Decision}
-    E -->|APPLY| F[Tailor Resume]
-    E -->|MAYBE| G[Hold / Review]
-    E -->|SKIP| X
-    F --> H[Verified Employer Link]
-    H --> I[Submit Application]
-    I --> J[Application Ledger]
-    K[Email / Recruiter / Portal Updates] --> L[Status Reconciliation]
-    L --> J
-    J --> M[Next-Action Queue]
-    M --> A
-```
-
-## Search funnel
-
-Each run should expose the funnel instead of only showing the final recommendations:
-
-```text
-Raw postings reviewed
-        ↓
-Unique postings after dedupe
-        ↓
-Plausible senior-level matches
-        ↓
-Fully evaluated opportunities
-        ↓
-APPLY / MAYBE / SKIP
-```
-
-This makes the breadth and selectivity of the search auditable.
-
-## Fit model
-
-The default weighted fit model is:
-
-| Dimension | Weight |
-|---|---:|
-| Platform / technical alignment | 25% |
-| Architecture alignment | 20% |
-| Seniority / scope | 15% |
-| Relevant domain experience | 10% |
-| Compensation | 10% |
-| Location / work arrangement | 10% |
-| Interview probability | 5% |
-| Career-direction alignment | 5% |
-
-Hard exclusions run **before** scoring. Examples include an exact requisition already applied to, an exact requisition already rejected, a user-blacklisted employer, a clearance requirement the candidate cannot meet, or compensation below a configured floor.
-
-See [docs/scoring-methodology.md](docs/scoring-methodology.md).
-
-## Repository layout
-
-```text
-CareerOps-Agent/
-├── README.md
-├── LICENSE
-├── pyproject.toml
-├── config/
-│   └── candidate-profile.example.yaml
-├── docs/
-│   ├── architecture.md
-│   ├── scoring-methodology.md
-│   └── workflow.md
-├── examples/
-│   ├── sample-application-ledger.json
-│   ├── scoring-output.json
-│   └── synthetic-job-input.json
-├── prompts/
-│   ├── application-tracking.md
-│   ├── fit-evaluation.md
-│   ├── gmail-reconciliation.md
-│   ├── job-discovery.md
-│   └── resume-tailoring.md
-├── schemas/
-│   ├── application.schema.json
-│   ├── candidate.schema.json
-│   └── job.schema.json
-├── src/
-│   └── careerops/
-│       ├── __init__.py
-│       ├── dedupe.py
-│       ├── ledger.py
-│       ├── scoring.py
-│       └── workflow.py
-├── .github/workflows/
-│   └── test.yml
-└── tests/
-    ├── test_dedupe.py
-    ├── test_ledger.py
-    └── test_scoring.py
-```
-
-## Design principles
-
-### Human in the loop
-CareerOps recommends and prepares. The candidate remains the decision-maker for applications, resume truthfulness, recruiter communication, and interview participation.
-
-### Source authority
-When statuses conflict, a higher-authority source wins. The default precedence is:
-
-```text
-user-confirmed / recruiter-confirmed
-    > employer portal
-    > employer automated email
-    > job-board automation
-    > inferred state
-```
-
-Silence never becomes a rejection.
-
-### Exact requisition deduplication
-A rejection or submission excludes the **exact requisition**, not every job at that company.
-
-### Truthful tailoring
-Resume tailoring changes emphasis, ordering, and vocabulary; it does not rewrite history, invent skills, alter dates, or manufacture outcomes.
-
-### Architecture-aware ranking
-The system can weight solution architecture and data-platform work above pure implementation while still surfacing compelling Staff/Principal engineering opportunities.
-
-## Quick start
-
-Requires Python 3.11+.
+Python 3.11+:
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -e ".[dev]"
-pytest
+source .venv/bin/activate # Windows: .venv\Scripts\activate
+pip install -e '.[dev]'
+careerops init --persona data-cloud-architect
+careerops run
+careerops jobs
+careerops explain JOB_ID
+careerops resume JOB_ID
+careerops ledger --job-id JOB_ID --status applied
+careerops ledger
+python -m pytest -q
 ```
 
-Example scoring:
+Use an ID from `careerops jobs`. `resume` writes a Markdown evidence draft with citations and gaps; it is not a finished chronological resume. Recommendations never become application records automatically. Recording an application explicitly excludes that exact job on the next run.
 
-```python
-from careerops.scoring import FitInputs, score_fit
+A separate persona needs a separate workspace:
 
-result = score_fit(
-    FitInputs(
-        technical_alignment=95,
-        architecture_alignment=90,
-        seniority_scope=90,
-        domain_alignment=80,
-        compensation=90,
-        location=100,
-        interview_probability=75,
-        career_direction=95,
-    )
-)
-
-print(result.score)
-print(result.decision)
+```bash
+careerops --workspace /tmp/tpm-demo init --persona technical-program-manager
+careerops --workspace /tmp/tpm-demo run
+careerops --workspace /tmp/infra-demo init --persona infrastructure-architect
+careerops --workspace /tmp/infra-demo run
 ```
 
-## Prompt architecture
+The default workspace is `.careerops/`. Edit `candidate.json`, `evidence.json`, and `role-packs/*.json` there to configure your own career. `careerops run --jobs jobs.json` ingests an array conforming to [the job contract](schemas/job.schema.json). Init refuses to overwrite an existing workspace and adds a workspace-level ignore file. Keep private workspaces outside a public repository; ignore rules are a convenience, not a privacy guarantee.
 
-The prompt templates under [prompts/](prompts/) are intentionally modular:
+## Architecture
 
-- **Discovery** finds current opportunities and records source metadata.
-- **Evaluation** scores and explains fit without padding weak roles.
-- **Tracking** maintains the state ledger.
-- **Communication reconciliation** applies source-authority rules.
-- **Resume tailoring** creates role-specific emphasis while preserving factual history.
+```mermaid
+flowchart TD
+    J[Job adapter / JSON] --> N[Normalize and deduplicate]
+    N --> H[Hard exclusions]
+    P[Candidate profile and search policy] --> H
+    L[Application ledger] --> H
+    H --> S[Generic scorer]
+    R[Role packs] --> S
+    E[Verified evidence store] --> Q[Requirement-based retriever]
+    Q --> S
+    S --> F[Ranking and funnel report]
+    Q --> T[Evidence-cited resume draft]
+    C[Communication / ATS events] --> X[Authority and recency reconciliation]
+    X --> L
+```
 
-They are templates, not a dump of private conversation history.
+| Component | Responsibility |
+|---|---|
+| Generic engine | Ingest, normalize, dedupe, exclude, score, rank and report |
+| Candidate profile | Target packs, declared skills and held clearances |
+| Evidence store | Structured achievements, projects, skills, metrics, proficiency and provenance |
+| Role pack | Title aliases, competency dimensions, weights, requirement terms and expected proficiency |
+| Search policy | Work arrangements, geography, comparable salary floor and decision thresholds |
+| Hard exclusions | Employer/term exclusions, missing clearance, application state and policy constraints |
+| Fit scoring | Candidate evidence coverage of recognized job requirements, with dimension-level explanations |
+| Application ledger | Explicit status events, separate from job recommendations |
+| Reconciliation | Normalized communication/ATS metadata, source authority, timestamp and idempotency |
+| Resume retrieval | Verified facts selected for a job, with evidence IDs and provenance |
+| Search funnel | Raw → unique → plausible → evaluated; exclusions and APPLY/MAYBE/SKIP totals |
 
-## Future roadmap
+## Nine starter role packs
 
-- Provider adapters for job boards and employer career sites
-- Pluggable email / calendar connectors
-- Persistent SQLite or Postgres application ledger
-- Resume document renderer
-- Configurable scoring profiles by career direction
-- CLI and lightweight web dashboard
-- Scheduled delta scans
-- Evaluation telemetry: interview rate by score band and source
-- LLM-independent deterministic checks for exclusions and status precedence
+Pack files ship under [`src/careerops/resources/role-packs/`](src/careerops/resources/role-packs/).
 
-## Disclaimer
+| Pack | Core competencies |
+|---|---|
+| Data Platform Architect | Platforms, governance, integration, architecture leadership |
+| Solution Architect | Design, cloud, security, stakeholder strategy |
+| Infrastructure Architect | Cloud infrastructure, networking, IAM/security, IaC, resiliency/DR, Kubernetes, observability, architecture leadership |
+| Data Engineer | Pipelines, processing, modeling, reliability, delivery |
+| AI Engineer | LLM/RAG implementation, agents, retrieval, operations, safety |
+| AI Architect | LLM architecture/RAG, agents/tool calling, embeddings/vector search, serving, evaluation/guardrails, ML lifecycle, security/governance, data-platform integration |
+| Technical Program Manager | Program delivery, stakeholder management, roadmap strategy, dependencies, risk management, technical depth, executive communication |
+| Product Manager | Strategy, discovery, prioritization, analytics, delivery |
+| Software Engineer | Implementation, system/API design, quality, operations, collaboration |
 
-CareerOps is a portfolio/reference implementation. Job postings, compensation, hiring status, and application outcomes change frequently and should be verified against authoritative employer sources before action.
+Add a new JSON role pack to a workspace and reference its ID in the candidate profile. No engine changes are needed. The starter packs use transparent equal dimension weights; customize weights and levels to reflect your goals.
+
+## Candidate-specific demonstrations
+
+The three bundled personas are Data / Cloud Architect, Technical Program Manager, and Infrastructure Architect. All run against the same synthetic feed, including a shared Solution Architect posting. Each persona supplies different verified evidence, so the shared job receives a different score and different resume evidence. Tests assert this behavior.
+
+## Evidence and AI boundary
+
+Evidence records carry stable IDs, a kind, summary, skills, capabilities, metrics, proficiency level (1–5), a verification flag, and a provenance source. Only verified records can support resume claims. Declared profile skills receive limited score credit and never become resume facts.
+
+The baseline uses boundary-aware lexical retrieval, not semantic embeddings. The `Retriever` protocol allows a vector/semantic implementation without changing exclusions or ranking. `verified` is a candidate-supplied assertion, not automatic fact checking. An eventual LLM should retrieve allowed evidence IDs and produce cited output; deterministic controls must still enforce provenance, exclusions and factual grounding. See [architecture](docs/architecture.md) and [scoring methodology](docs/scoring-methodology.md).
+
+## Status reconciliation
+
+```bash
+careerops ledger --job-id JOB_ID --status interviewing --source recruiter \
+  --observed-at 2026-10-01T12:00:00+00:00
+careerops ledger --events examples/synthetic-status-events.json
+```
+
+Only normalized status metadata is needed; no message bodies are stored. Authority is user-confirmed > recruiter > employer portal > employer email > job board > inferred. Recency breaks ties. Silence never means rejection. Historical higher-authority records deliberately outrank newer automation; review and correct stale authoritative states explicitly.
+
+## Validation and boundaries
+
+CI tests Python 3.11–3.13, validates the reusable pipeline and CLI, builds a wheel, and runs the installed demo outside the source checkout. Versioned JSON schemas are shipped in the wheel and mirrored in [`schemas/`](schemas/).
+
+Current limits: lexical requirement recognition, title-alias routing, no automatic seniority/date inference, no live job/email connectors, no exchange-rate conversion, no generated DOCX, and a single-process local JSON ledger. Unknown requirements and insufficient recognition become MAYBE with manual-review warnings. Scores describe recognized evidence coverage, not hiring probability. Compensation is treated as a constraint, not a predicted offer.
+
+The v0.1 `FitInputs` scorer and workflow functions remain as compatibility APIs; the CLI and new integrations use `careerops.engine.run`. They do not supply default weights to the generic engine.
+
+## Next extensions
+
+- Provider adapters for employer/job-board data and normalized ATS events
+- Embedding retrieval and evidence-grounded LLM drafting with evaluation fixtures
+- Required/preferred requirement extraction, temporal evidence and seniority modeling
+- SQLite/Postgres persistence with transactions and candidate isolation
+- Chronological resume assembly and document rendering
+- Outcome telemetry and score calibration using opt-in private data
+
+MIT licensed. Never commit credentials, personal resumes, recruiter messages, private application history, or real email content.

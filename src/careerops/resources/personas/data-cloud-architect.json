@@ -1,0 +1,130 @@
+{
+  "profile": {
+    "schema_version": 1,
+    "id": "data-cloud-architect",
+    "display_name": "Synthetic Data Platform Architect",
+    "role_packs": [
+      "data-platform-architect",
+      "solution-architect"
+    ],
+    "skills": [],
+    "clearances": [],
+    "search_policy": {
+      "work_modes": [
+        "remote"
+      ],
+      "locations": [],
+      "minimum_salary": 120000,
+      "currency": "USD",
+      "apply_threshold": 85,
+      "maybe_threshold": 65,
+      "minimum_requirement_coverage": 0.4
+    },
+    "hard_exclusions": {
+      "companies": [],
+      "terms": [],
+      "require_known_salary": false
+    }
+  },
+  "evidence": [
+    {
+      "id": "data-cloud-architect-platform",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated data platform, lakehouse, warehouse, databricks, fabric; completed review with delivery team.",
+      "skills": [
+        "data platform",
+        "lakehouse",
+        "warehouse",
+        "databricks",
+        "fabric"
+      ],
+      "capabilities": [
+        "platform"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://data-cloud-architect/platform"
+    },
+    {
+      "id": "data-cloud-architect-governance",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated governance, lineage, catalog, security; completed review with delivery team.",
+      "skills": [
+        "governance",
+        "lineage",
+        "catalog",
+        "security"
+      ],
+      "capabilities": [
+        "governance"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://data-cloud-architect/governance"
+    },
+    {
+      "id": "data-cloud-architect-integration",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated integration, pipelines, streaming; completed review with delivery team.",
+      "skills": [
+        "integration",
+        "pipelines",
+        "streaming"
+      ],
+      "capabilities": [
+        "integration"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://data-cloud-architect/integration"
+    },
+    {
+      "id": "data-cloud-architect-leadership",
+      "kind": "project",
+      "summary": "Synthetic project demonstrated architecture, stakeholder, strategy; completed review with delivery team.",
+      "skills": [
+        "architecture",
+        "stakeholder",
+        "strategy"
+      ],
+      "capabilities": [
+        "leadership"
+      ],
+      "metrics": [
+        {
+          "name": "Synthetic benchmark improvement",
+          "value": 20,
+          "unit": "percent",
+          "context": "Illustrative fixture, not a real career outcome"
+        }
+      ],
+      "level": 3,
+      "verified": true,
+      "source": "synthetic://data-cloud-architect/leadership"
+    }
+  ]
+}

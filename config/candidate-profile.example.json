@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "technical-program-manager",
+  "display_name": "Synthetic Technical Program Manager",
+  "role_packs": [
+    "technical-program-manager",
+    "solution-architect"
+  ],
+  "skills": [],
+  "clearances": [],
+  "search_policy": {
+    "work_modes": [
+      "remote"
+    ],
+    "locations": [],
+    "minimum_salary": 120000,
+    "currency": "USD",
+    "apply_threshold": 85,
+    "maybe_threshold": 65,
+    "minimum_requirement_coverage": 0.4
+  },
+  "hard_exclusions": {
+    "companies": [],
+    "terms": [],
+    "require_known_salary": false
+  }
+}

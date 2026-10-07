@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "data-engineer",
+  "name": "Data Engineer",
+  "title_aliases": [
+    "data engineer"
+  ],
+  "dimensions": [
+    {
+      "id": "pipelines",
+      "weight": 0.2,
+      "terms": [
+        "pipelines",
+        "etl",
+        "elt",
+        "streaming"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "processing",
+      "weight": 0.2,
+      "terms": [
+        "sql",
+        "python",
+        "spark"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "modeling",
+      "weight": 0.2,
+      "terms": [
+        "data modeling",
+        "warehouse"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "reliability",
+      "weight": 0.2,
+      "terms": [
+        "testing",
+        "observability",
+        "data quality"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "delivery",
+      "weight": 0.2,
+      "terms": [
+        "delivery",
+        "collaboration"
+      ],
+      "required_level": 3
+    }
+  ]
+}

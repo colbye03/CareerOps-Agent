@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "software-engineer",
+  "name": "Software Engineer",
+  "title_aliases": [
+    "software engineer",
+    "software developer"
+  ],
+  "dimensions": [
+    {
+      "id": "implementation",
+      "weight": 0.2,
+      "terms": [
+        "python",
+        "java",
+        "typescript"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "design",
+      "weight": 0.2,
+      "terms": [
+        "system design",
+        "api"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "quality",
+      "weight": 0.2,
+      "terms": [
+        "testing",
+        "code review"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "operations",
+      "weight": 0.2,
+      "terms": [
+        "ci/cd",
+        "observability"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "collaboration",
+      "weight": 0.2,
+      "terms": [
+        "collaboration",
+        "delivery"
+      ],
+      "required_level": 3
+    }
+  ]
+}

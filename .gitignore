@@ -12,3 +12,6 @@ build/
 *.db
 private/
 resumes/
+
+.careerops/
+careerops-workspace/

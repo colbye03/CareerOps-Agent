@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "infrastructure-architect",
+  "name": "Infrastructure Architect",
+  "title_aliases": [
+    "infrastructure architect",
+    "cloud infrastructure architect"
+  ],
+  "dimensions": [
+    {
+      "id": "cloud",
+      "weight": 0.14285714285714285,
+      "terms": [
+        "cloud infrastructure",
+        "azure",
+        "aws"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "networking",
+      "weight": 0.14285714285714285,
+      "terms": [
+        "networking",
+        "dns",
+        "routing"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "security",
+      "weight": 0.14285714285714285,
+      "terms": [
+        "iam",
+        "security"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "automation",
+      "weight": 0.14285714285714285,
+      "terms": [
+        "iac",
+        "terraform"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "resilience",
+      "weight": 0.14285714285714285,
+      "terms": [
+        "resiliency",
+        "disaster recovery",
+        "dr"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "platform",
+      "weight": 0.14285714285714285,
+      "terms": [
+        "kubernetes",
+        "observability"
+      ],
+      "required_level": 3
+    },
+    {
+      "id": "leadership",
+      "weight": 0.14285714285714285,
+      "terms": [
+        "architecture leadership",
+        "architecture"
+      ],
+      "required_level": 3
+    }
+  ]
+}
