@@ -1,0 +1,25 @@
+{
+  "company": "Example Health Analytics",
+  "title": "Principal Data Platform Architect",
+  "requisition_id": "EX-1042",
+  "source": "employer",
+  "source_url": "https://example.com/careers/EX-1042",
+  "apply_url": "https://example.com/careers/EX-1042/apply",
+  "location": "United States",
+  "work_arrangement": "remote",
+  "compensation_min": 185000,
+  "compensation_max": 235000,
+  "currency": "USD",
+  "requirements": [
+    "Databricks",
+    "Spark",
+    "cloud data architecture",
+    "governance",
+    "stakeholder leadership"
+  ],
+  "preferred_qualifications": [
+    "healthcare experience",
+    "Unity Catalog",
+    "Microsoft Fabric"
+  ]
+}
